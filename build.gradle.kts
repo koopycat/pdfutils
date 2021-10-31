@@ -10,7 +10,7 @@ plugins {
     kotlin("jvm") version kotlinVersion
     kotlin("plugin.allopen") version kotlinVersion
     id("com.github.ben-manes.versions") version "0.39.0"
-    id("io.quarkus") version "2.2.3.Final"
+    id("io.quarkus") version "2.3.1.Final"
 }
 
 group = "de.vkoop"
@@ -21,8 +21,8 @@ repositories {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
 }
 
 dependencies {
@@ -37,7 +37,7 @@ dependencies {
 
 tasks.withType<KotlinCompile> {
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8.toString()
+        jvmTarget = JavaVersion.VERSION_11.toString()
         javaParameters = true
     }
 }
