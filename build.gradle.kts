@@ -1,5 +1,5 @@
 plugins {
-    val kotlinVersion = "2.1.0"
+    val kotlinVersion = "2.4.10"
 
     id("application")
 
