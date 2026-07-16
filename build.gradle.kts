@@ -23,8 +23,6 @@ val picoliVersion : String by project
 val openpdfVersion : String by project
 
 dependencies {
-    implementation(kotlin("stdlib-jdk8"))
-
     implementation("com.github.librepdf:openpdf:$openpdfVersion")
     implementation("info.picocli:picocli:$picoliVersion")
 }
