@@ -19,14 +19,24 @@ distributions {
     }
 }
 
-val picoliVersion : String by project
-val openpdfVersion : String by project
+val picoliVersion = project.property("picoliVersion") as String
+val openpdfVersion = project.property("openpdfVersion") as String
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
 
     implementation("com.github.librepdf:openpdf:$openpdfVersion")
     implementation("info.picocli:picocli:$picoliVersion")
+
+    // JUnit 5 dependencies
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.1")
+    testImplementation("org.junit.jupiter:junit-jupiter-params:5.10.1")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.10.1")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.10.1")
+
+    // Mockito for mocking in tests
+    testImplementation("org.mockito:mockito-core:5.8.0")
+    testImplementation("org.mockito.kotlin:mockito-kotlin:5.2.1")
 }
 
 kotlin {

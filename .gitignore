@@ -1,5 +1,9 @@
 .gradle
 build
 out
+bin
 .idea
 .settings
+.classpath
+.project
+.env
