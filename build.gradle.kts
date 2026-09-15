@@ -35,7 +35,7 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.10.1")
 
     // Mockito for mocking in tests
-    testImplementation("org.mockito:mockito-core:5.8.0")
+    testImplementation("org.mockito:mockito-core:5.23.0")
     testImplementation("org.mockito.kotlin:mockito-kotlin:5.2.1")
 }
 
