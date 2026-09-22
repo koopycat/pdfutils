@@ -29,9 +29,9 @@ dependencies {
     implementation("info.picocli:picocli:$picoliVersion")
 
     // JUnit 5 dependencies
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.1")
-    testImplementation("org.junit.jupiter:junit-jupiter-params:5.10.1")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.10.1")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:6.1.3")
+    testImplementation("org.junit.jupiter:junit-jupiter-params:6.1.3")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:6.1.3")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.10.1")
 
     // Mockito for mocking in tests
